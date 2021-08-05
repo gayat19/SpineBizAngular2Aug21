@@ -1,0 +1,58 @@
+<!-- <h1>
+  Hello World!!!!!
+</h1>
+<div>
+  <app-customer></app-customer>
+</div>
+<div>
+  <app-flower></app-flower>
+</div>
+<section>
+  <app-flowers></app-flowers>
+</section>
+<hr>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<section >
+  <app-cart></app-cart>
+</section>
+<br>
+<section>
+  <app-add-flower></app-add-flower>
+</section> -->
+<!-- <div [ngSwitch]="choice">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" (click)="choice='Customer'">Customer</a>
+        <a class="nav-item nav-link" (click)="choice='Buy'">Purchase</a>
+        <a class="nav-item nav-link" (click)="choice='Add'">Add Flower</a>
+      </div>
+    </div>
+  </nav>
+  <br><br>
+  <section *ngSwitchCase="'Customer'" >
+    <app-customer></app-customer>
+  </section>
+  <section *ngSwitchCase="'Add'" >
+    <app-add-flower></app-add-flower>
+  </section>
+  <section *ngSwitchCase="'Buy'" >
+    <app-flowers></app-flowers>
+  </section>
+</div> -->
+<div >
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" routerLink="home">Customer</a>
+        <a class="nav-item nav-link"  routerLink="buy">Purchase</a>
+        <a class="nav-item nav-link" routerLink="add">Add Flower</a>
+      </div>
+    </div>
+  </nav>
+  <br><br>
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+  
+</div>

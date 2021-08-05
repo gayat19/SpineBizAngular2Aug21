@@ -1,0 +1,14 @@
+<h1>
+    Changed Customer file
+</h1>
+<input type="text" [(ngModel)]="data">
+<div>
+    {{data |text}}
+</div>
+<button (click)="getData()" class="btn btn-success">Get Data</button>
+<div *ngFor="let post of posts"> 
+    {{post.id}}
+    <br>
+    {{post.title}}
+    <hr>
+</div>

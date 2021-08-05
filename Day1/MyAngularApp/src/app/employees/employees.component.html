@@ -1,0 +1,8 @@
+
+<div *ngFor = "let empl of employees">
+    <p>
+         {{empl.id}}<button class="btn btn-warning" (click)="show(empl.id)">Show More</button>
+    </p>
+</div>
+{{employeeRules | text}}
+<router-outlet></router-outlet>

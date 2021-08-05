@@ -1,0 +1,36 @@
+<!-- <p class="alert alert-success">
+    Flower ID: {{flower.id}}
+    <br>
+    Flower Name : {{flower.name}}
+    <br>
+    <img height="100" width="100" [src]="flower.pic" alt="No Pic">
+</p>
+<p>
+    Change name:<input type="text" [(ngModel)]="flower.name">
+</p>
+<button [class]="className" (click)="checkWork()">Click to check</button>
+<p>
+    {{flower | json}}
+</p> -->
+
+
+<div class="card">
+    <!--Card image-->
+    <div class="view">
+      <img [src]="flower.pic" class="card-img-top" alt="photo">
+      <a href="#">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body elegant-color white-text">
+      <!--Title-->
+      <h4 class="card-title">{{flower.name}}</h4>
+      <!--Text-->
+      <p class="card-text white-text"></p>
+      <button *ngIf="flower.quantity>0" class="btn btn-primary" (click)="buy()">Buy for {{flower.price}}</button>
+      <button *ngIf="flower.quantity==0" disabled class="btn btn-danger">Sold Out</button>
+    </div>
+
+  </div>

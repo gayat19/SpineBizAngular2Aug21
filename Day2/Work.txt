@@ -1,0 +1,10 @@
+Structural derectives
+ngFor
+ngIf
+
+Inter-component communication
+  Input and Output
+
+Service
+  DI
+ 

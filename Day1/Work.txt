@@ -1,0 +1,35 @@
+to check teh version of angular
+ng --version
+TO create a new application in angular
+ng new <applicationname>
+example
+ng new MyAngularApp
+
+Angular -> SPA
+Routing
+
+
+To generate a new component 
+ng generate component <componentname>
+example
+ng generate component flower
+(or)
+ng g c flower
+
+Installing bootstrap
+in the cmd prompt
+npm install bootstrap --save
+
+in the style.css
+@import '~bootstrap/dist/css/bootstrap.css';
+
+Create a New application create 2 components
+1) Employee-> ID, name ,password and age(Ensure you create a model and use the same) 
+do not display the password
+2) Login-> has username, password and buttons
+
+
+
+
+
+

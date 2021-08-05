@@ -1,0 +1,132 @@
+<div>
+
+    <!-- <table>
+
+        <tr>
+            <td>
+                <label class="form-control">Flower ID</label>
+            </td>
+            <td>
+                <input type = "text" [(ngModel)]="flower.id" #id="ngModel" required class="form-control">
+            </td>
+            <td>
+                <span *ngIf="id.touched && id.valid != true" class="alert alert-danger">Id cannot be empty</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="form-control">Flower Name</label>
+            </td>
+            <td>
+                <input type = "text" [(ngModel)]="flower.name" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="form-control">Flower price</label>
+            </td>
+            <td>
+                <input type = "text" [(ngModel)]="flower.price" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="form-control">Flower Quantity</label>
+            </td>
+            <td>
+                <input type = "text" [(ngModel)]="flower.quantity" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="form-control">Flower pic</label>
+            </td>
+            <td>
+                <input type = "text" [(ngModel)]="flower.pic" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button (click)="addNewFlower()" class = "btn btn-success">Add Flower</button>
+            </td>
+            <td>
+                <button (click)="reset()" class = "btn btn-danger">Cancel</button>
+            </td>
+        </tr>
+    </table> -->
+    <form [formGroup]="formGroup">
+        <table>
+            <tr>
+                <td>
+                    <label class="form-control">Flower ID</label>
+                </td>
+                <td>
+                    <input type = "text" formControlName="id" required class="form-control">
+                </td>
+                <td>
+                    <span *ngIf="id.touched && id.valid != true" class="alert alert-danger">Id cannot be empty</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="form-control">Flower Name</label>
+                </td>
+                <td>
+                    <input type = "text" formControlName="name"  class="form-control">
+                </td>
+                <td>
+                    <span *ngIf="name.touched && name.errors" class="alert alert-danger">
+                        <span *ngIf="name.errors.required">
+                            Name cannot be empty
+                        </span>
+                        <span *ngIf="name.errors.pattern">
+                            Invalid name
+                        </span>
+                       
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="form-control">Flower price</label>
+                </td>
+                <td>
+                    <input type = "text" formControlName="price"  class="form-control">
+                </td>
+                <td>
+                    <span *ngIf="name.touched && name.valid != true" class="alert alert-danger">
+                      Price
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="form-control">Flower Quantity</label>
+                </td>
+                <td>
+                    <input type = "text" formControlName="quantity"  class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="form-control">Flower pic</label>
+                </td>
+                <td>
+                    <input type = "text"  class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button (click)="addNewFlower()" class = "btn btn-success">Add Flower</button>
+                </td>
+                <td>
+                    <button (click)="reset()" class = "btn btn-danger">Cancel</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div *ngIf="message" class="alert alert-danger">
+        {{message}}
+    </div>
+</div>
+

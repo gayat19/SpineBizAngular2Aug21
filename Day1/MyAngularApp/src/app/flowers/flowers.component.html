@@ -1,0 +1,10 @@
+<div *ngFor="let flower of flowers">
+  <app-flower [myFlower]="flower" (buyClick)="buyFlower($event)"></app-flower>
+</div>
+<div>
+  You have to pay {{totalPrice}}
+</div>
+<hr>
+<section>
+   <app-cart></app-cart>
+</section>
