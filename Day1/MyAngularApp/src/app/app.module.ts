@@ -19,6 +19,9 @@ import { EmployeeService } from './services/employee.service';
 import { TextPipe } from './text.pipe';
 import { DbService } from './services/db.service';
 import { LandingComponent } from './landing/landing.component';
+import { ItesComponent } from './ites/ites.component';
+import { CardDerective } from './cardderective';
+import { SampledirDirective } from './sampledir.directive';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { LandingComponent } from './landing/landing.component';
     EmployeeComponent,
     EmployeesComponent,
     TextPipe,
-    LandingComponent
+    LandingComponent,
+    ItesComponent,
+    CardDerective,
+    SampledirDirective
   ],
   imports: [
     BrowserModule,

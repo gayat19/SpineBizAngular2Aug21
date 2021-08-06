@@ -1,0 +1,9 @@
+<div>
+    name {{item.name}}
+    <i (click)="toggle()" [class]="item.isFav?'glyphicon glyphicon-heart':'glyphicon glyphicon-heart-empty'"></i>
+</div>
+
+<div [hidden]="item.isFav">
+    This is the message
+</div>
+<input type="text" card>

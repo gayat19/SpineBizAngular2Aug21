@@ -1,0 +1,5 @@
+Create an application that will take user anme and password and validate it against the list present in teh UserService.
+
+If the user is valid take him to home page to show the list of products present.
+Product(id,name,pic,price,isAvailable)
+If tehproduct is not available then do ot display it

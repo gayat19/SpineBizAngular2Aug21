@@ -13,6 +13,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { LandingComponent } from './landing/landing.component';
+import { ItesComponent } from './ites/ites.component';
 
 const routes: Routes = [
   
@@ -25,6 +26,7 @@ const routes: Routes = [
     {path:'emp/:id',component:EmployeeComponent}
   ]},
   {path:'',component:LoginComponent},
+  {path:'item',component:ItesComponent},
   {path:'**',component:LandingComponent}
   
 ];
